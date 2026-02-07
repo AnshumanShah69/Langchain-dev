@@ -35,7 +35,7 @@ if st.button("Generate Summary"):
 
     #basically we are requesting template and model, then we are passing the parameters to the invoke method to complete the template then we are calling the model and then printing the result    
 
-    #1 invoke method instead of 2 calls
+    #1 invoke method instead of 2 calls - model.invoke and template are not called instead we use chains.invoke which is a combination of both template and model.
     chains = template | model # Create a chain by piping the prompt to the model
     result = chains.invoke({
         "style": style,

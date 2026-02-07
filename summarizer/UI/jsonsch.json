@@ -1,0 +1,10 @@
+{
+  "title": "Mobile Phone Review Summary",
+  "description": "A structured summary of a mobile phone review, including key themes, a concise summary, sentiment, pros and cons, and the name of the author if available.",
+  "type": "object",
+  "properties": {
+    "name": "string",
+    "warranty_in_years": "number"
+  },
+  "required": ["warranty_in_years"]
+}
